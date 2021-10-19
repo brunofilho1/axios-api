@@ -54,6 +54,14 @@ function deleteUser(id) {
 //calls
 getUsers()
 getUser()
-// addNewUser({name: "Olivia Zars", avatar: "http://lorempixel.com/400/200", city: "Rio do Sul" })
-// updateUser({name: "Marcelo Calvis", avatar: "http://lorempixel.com/400/200", city: "Recife" }, 3)
-// deleteUser(4)
+// addNewUser({
+//   name: "Olivia Zars",
+//   avatar: "http://lorempixel.com/400/200",
+//   city: "Rio do Sul"
+// })
+// updateUser({
+//   name: "Marcelo Calvis",
+//   avatar: "http://lorempixel.com/400/200",
+//   city: "Recife"
+// }, 3)
+// deleteUser(2)
