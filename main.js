@@ -45,3 +45,10 @@ function deleteUser() {
     document.location.reload(true);
   }).catch(error => console.log(error))
 }
+
+function getOneUser() {
+  axios.get(`${url}/3`).then(res => {
+    const data = res.data;
+    renderApiResult.textContent = JSON.stringify(data);
+  }).catch(error => console.log(error))
+}
