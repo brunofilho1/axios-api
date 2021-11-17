@@ -9,12 +9,22 @@
 
 <body>
     <div id="renderApiResult">AXIOSSSS</div>
-    <button onclick="addNewUser()">Adicionar novo usuário</button>
-    <button onclick="updateUser()">Atualizar usuário</button>
-    <button onclick="deleteUser()">Deletar usuário</button>
-    <button onclick="getOneUser()">Mostrar apenas um usuário</button>
-    <br>
-    <br>
+
+    <form>
+        <label for="avatar">Link da sua foto:</label>
+        <input type="text" id="avatarInput">
+        <label for="name">Nome:</label>
+        <input type="text" id="nameInput">
+        <label for="city">Cidade:</label>
+        <input type="text" id="cityInput">
+    </form>
+
+    <div class="buttons">
+        <button onclick="addNewUser()">Adicionar novo usuário</button>
+        <button onclick="updateUser()">Atualizar usuário</button>
+        <button onclick="deleteUser()">Deletar usuário</button>
+        <button onclick="getOneUser()">Mostrar apenas um usuário</button>
+    </div>
     
     <div class="clients">
 
