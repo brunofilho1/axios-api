@@ -15,7 +15,11 @@ const updatedUser = {
 function getUser() {
   axios.get(url).then(res => {
     const data = res.data;
-    renderApiResult.textContent = JSON.stringify(data);
+    renderApiResult.textContent = JSON.stringify(data.users);
+    let avatar = JSON.stringify(data.users[1].avatar).replace(/"/g, '')
+    foto.innerHTML = `<img src="${avatar}" />`
+    nome.textContent = JSON.stringify(data.users[1].name).replace(/"/g, '')
+    cidade.textContent = JSON.stringify(data.users[1].city).replace(/"/g, '')
   }).catch(error => console.log(error))
 };
 
@@ -31,7 +35,7 @@ function addNewUser() {
 /* addNewUser(); */
 
 function updateUser() {
-  axios.put(`${url}/5`, updatedUser).then(res => {
+  axios.put(`${url}/3`, updatedUser).then(res => {
     console.log(res.data);
     alert(JSON.stringify(res.data));
     document.location.reload(true);
@@ -40,7 +44,7 @@ function updateUser() {
 /* updateUser() */
 
 function deleteUser() {
-  axios.delete(`${url}/7`).then(res => {
+  axios.delete(`${url}/3`).then(res => {
     alert(JSON.stringify(res.data));
     document.location.reload(true);
   }).catch(error => console.log(error))

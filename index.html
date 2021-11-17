@@ -4,6 +4,7 @@
     <title>Consumindo API com AXIOS</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="main.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -12,6 +13,26 @@
     <button onclick="updateUser()">Atualizar usuário</button>
     <button onclick="deleteUser()">Deletar usuário</button>
     <button onclick="getOneUser()">Mostrar apenas um usuário</button>
+    <br>
+    <br>
+    
+    <div class="clients">
+
+        <div id="foto"></div>
+
+        <div class="dados">
+            <div>
+                <div id="label">Nome:</div>
+                <div id="nome"></div>
+            </div>
+    
+            <div>
+                <div id="label">Cidade:</div>
+                <div id="cidade"></div>
+            </div>
+        </div>
+
+    </div>
 </body>
 
 </html>
